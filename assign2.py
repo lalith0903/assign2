@@ -18,3 +18,6 @@ feature=a.find('div', attrs={'class':'fMghEO'})
 products.append(name.text)
 prices.append(price.text)
 features.append(feature.text)
+
+df = pd.DataFrame({'Product Name':products,'Price':prices,'Rating':ratings}) 
+df.to_csv('products.csv', index=False, encoding='utf-8')
