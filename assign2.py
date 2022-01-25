@@ -19,5 +19,5 @@ products.append(name.text)
 prices.append(price.text)
 features.append(feature.text)
 
-df = pd.DataFrame({'Product Name':products,'Price':prices,'Rating':ratings}) 
+df = pd.DataFrame({'Product Name':products,'Price':prices,'feature':features}) 
 df.to_csv('products.csv', index=False, encoding='utf-8')
